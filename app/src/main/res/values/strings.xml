@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cricket League</string>
+    <string name="textual1">1) The club is organised into number of teams. Each team is identified by unique name (team id)</string>
+    <string name="textual2">2) Each team is owner by a single owner or many owners (Identified by owner_id)</string>
+    <string name="textual3">3) Each team consists of one or more coaches having their own speciality and unique id</string>
+    <string name="textual4">4) The team consists of no of players. Each player is identified by unique name (player_id)</string>
+    <string name="textual5">5) Every single player has physical fitness checked b height and weight of player and identified by unique fitness_id having corresponding fitness_value</string>
+    <string name="textual6">6) Each player has specific status(playing status identified by unique status_id)</string>
+<!--    </string>>-->
+</resources>

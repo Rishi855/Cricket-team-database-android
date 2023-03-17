@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".coaches.CoachDisplay"
+    android:background="@drawable/playerlistbackgroud">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="411dp"
+        android:layout_height="178dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageButton3"
+            android:layout_width="411dp"
+            android:layout_height="178dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/coach_icon"/>
+
+        <LinearLayout
+            android:layout_width="451dp"
+            android:layout_height="164dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/testPlayerID"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/titleofattribute"
+                android:padding="5dp"
+                android:text="textCoachID"
+                android:textColor="#001A60" />
+
+            <TextView
+                android:id="@+id/textTeamID"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/titleofattribute"
+                android:padding="5dp"
+                android:text="textCoachTeamID"
+                android:textColor="#001A60" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="356dp"
+        android:layout_height="454dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/update_mode"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/Identity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/titleofattribute"
+                android:padding="5dp"
+                android:text="Indentity :"
+                android:textColor="#001A60"
+                android:textColorHint="#01040C"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textcoachname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:text="Coach Name"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/textJerseyNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/attributes"
+                android:enabled="false"
+                android:minHeight="48dp"
+                android:padding="3dp"
+                android:text="textCoachName"
+                android:textColor="#000000"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/textcoachspecificaion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:text="Coach Specification"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/textPlayerName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/attributes"
+                android:enabled="false"
+                android:padding="3dp"
+                android:text="textCoachSpecification"
+                android:textColor="#000000"
+                android:textSize="22dp" />
+
+            <TextView
+                android:id="@+id/textcoachexperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:text="Coach Experience"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/textSpecification"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="3dp"
+                android:background="@drawable/attributes"
+                android:enabled="false"
+                android:padding="3dp"
+                android:text="textCoachExperience"
+                android:textColor="#000000"
+                android:textSize="22dp" />
+
+        </LinearLayout>
+    </ScrollView>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fabMenu"
+        android:layout_width="136dp"
+        android:layout_height="238dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="15dp"
+        app:fab_addButtonColorNormal="@color/pink"
+        app:fab_addButtonColorPressed="@color/pink_pressed"
+        app:fab_addButtonPlusIconColor="@color/white"
+        app:fab_labelStyle="@style/customFab"
+        app:layout_anchorGravity="bottom|right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_icon="@drawable/ic_baseline_edit_24"
+            app:fab_size="mini"
+            app:fab_title="Update" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_icon="@drawable/ic_baseline_save_24"
+            app:fab_size="mini"
+            app:fab_title="Save" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.DBE1" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#0D2A91</item>
+        <item name="colorPrimaryDark">@color/ic_launcher_player_1_background</item>
+        <item name="colorAccent">#061447</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="customFab">
+        <item name='android:background'>@drawable/fab_bg</item>
+        <item name='android:textColor'>@color/white</item>
+    </style>
+
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".players.PlayersViewActivity"
+    android:id="@+id/playerDisplay"
+    android:background="@color/black">
+
+    <ListView
+        android:id="@+id/listViewPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:textAlignment="center"
+        android:background="@color/black">
+    </ListView>
+
+<!--    <android.support.design.widget.FloatingActionButton-->
+<!--        android:id="@+id/float_add_new_player"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:contentDescription="@string/app_name"-->
+<!--        android:src="@drawable/ic_baseline_floting_button_add_icon"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.876"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.931" />-->
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fabMenuPlayer"
+        android:layout_width="136dp"
+        android:layout_height="238dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="15dp"
+        app:fab_addButtonColorNormal="@color/pink"
+        app:fab_addButtonColorPressed="@color/pink_pressed"
+        app:fab_addButtonPlusIconColor="@color/white"
+        app:fab_labelStyle="@style/customFab"
+        app:layout_anchorGravity="bottom|right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.967">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/float_add_new_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/white_pressed"
+            app:fab_icon="@drawable/ic_baseline_add_circle_outline_24"
+            app:fab_size="mini"
+            app:fab_title="Add" />
+
+        <!--        <com.getbase.floatingactionbutton.FloatingActionButton-->
+        <!--            android:id="@+id/fabSave"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            app:fab_colorNormal="@color/white"-->
+        <!--            app:fab_colorPressed="@color/white_pressed"-->
+        <!--            app:fab_icon="@drawable/ic_baseline_save_24"-->
+        <!--            app:fab_size="mini"-->
+        <!--            app:fab_title="Save" />-->
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</android.support.constraint.ConstraintLayout>

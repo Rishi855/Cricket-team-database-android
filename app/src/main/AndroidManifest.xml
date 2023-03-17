@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.dbe1">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_player_1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_player_1_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DBE1"
+        tools:targetApi="31">
+        <activity
+            android:name=".Information"
+            android:exported="false"
+            android:label="Information"/>
+        <activity
+            android:name=".PlayerCoachView"
+            android:exported="false"
+            android:label="Players/Coaches" />
+        <activity
+            android:name=".owners.GetOwnerValueByUser"
+            android:exported="false"
+            android:noHistory="true"
+            android:label="New Owner data"/>
+        <activity
+            android:name=".owners.OwnersViewActivity"
+            android:exported="false"
+            android:label="Owners" />
+        <activity
+            android:name=".coaches.CoachDisplay"
+            android:exported="false"
+            android:label="Selected Coach"/>
+        <activity
+            android:name=".coaches.GetCoachValueByUser"
+            android:exported="false"
+            android:noHistory="true"
+            android:label="New Coach data"/>
+
+        <activity android:name=".coaches.CoachesViewActivity"
+            android:label="Coaches"/>
+        <activity
+            android:name=".players.PlayerDisplay"
+            android:exported="false"
+            android:label="Selected Player"/>
+        <activity
+            android:name=".players.GetPlayerValueByUser"
+            android:exported="false"
+            android:noHistory="true"
+            android:label="New Player data"/>
+        <activity
+            android:name=".teams.TeamDisplay"
+            android:exported="false"
+            android:label="Selected Team"/>
+        <activity
+            android:name=".players.PlayersViewActivity"
+            android:exported="false"
+            android:label="Players"/>
+        <activity
+            android:name=".teams.GetTeamValueByUser"
+            android:exported="false"
+            android:noHistory="true"
+            android:label="New Team data"/>
+        <activity
+            android:name=".teams.TeamsViewActivity"
+            android:exported="false"
+            android:label="Teams"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
